@@ -41,7 +41,7 @@ export default {
   .navigate {
     border: 0;
     padding: 0.75rem 3rem;
-    color: black;
+    color: white;
     border-radius: 2rem;
     font-size: 1rem;
     cursor: pointer;

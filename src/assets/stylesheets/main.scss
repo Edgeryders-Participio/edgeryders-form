@@ -1,5 +1,6 @@
-$primary: #d7f205;
+$primary: #234965;
 $secondary: black;
+$tertiary: white;
 
 $complete: black;
 $incomplete: #eeeeee;
@@ -23,10 +24,10 @@ ul {
 }
 
 .primary-background { background-color: $primary; }
-.primary { color: $primary; }
+.primary { color: $tertiary; }
 
 .secondary-background { background-color: $secondary; }
-.secondary { color: $secondary; }
+.secondary { color: $tertiary; }
 
 .complete { background-color: $complete; }
 .incomplete { background-color: $incomplete; }

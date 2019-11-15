@@ -1,6 +1,6 @@
 {
   "brand": {
-    "title": "Rethinking retirement",
+    "title": "Get involved with Burning Stories",
     "logoSrc": "/favicon.ico",
     "imageSrc": "/logo.png",
     "beginText": "BEGIN",
@@ -25,37 +25,28 @@
     "settings": { "omitFields": true }
   },
   "slides": [{
-    "title": "Hello, visitor!",
-    "subtitle": "Welcome to the Academy of Life - an experiment in rethinking retirement",
-    "body": "This ethnographic research is part of a global conversation in which participants imagine how they want to spend their elderly years. The collected data is anonymous, collected on an open source platform. You can see, edit or delete it by visiting a link we will send you as confirmation. You can finish this questionnaire at any point - but the further you get, the more concrete your vision of retirement will become.",
+    "title": "Hello, and welcome to Burning Stories!",
+    "subtitle": "Welcome to the Burning Stories research unit - an experiment in understanding creative and participatory leadership",
+    "body": "The aim of Burning Stories is to study the global Burning Man community. We seek to explain the processes through which community membership evolves across time and space, and how this, in turn, affects their experience of the collective identity. There is a very limited understanding of how its immersive experiences transform individuals, let alone society. That is precisely what we aim to find out with this project.",
     "fields": []
   }, {
     "title": "Ready?",
-    "body": "Imagine retirement as a period when you don't need to go to work anymore. You don't need to be \"retired\", either. The division between retirement and work doesn't exist, you create the balance.",
+    "body": "What was it that brought you here? What do you really care about right now? You are somehow connected to the global 'burner' culture, either as a researcher of it, a leader in it or a co-creator of it. What are the experiences that keep pulling you back into it?",
     "fields": []
   }, {
     "index": 1,
-    "body": "We don't seem to discuss retirement much with others. How much do you think about your own retirement? What do you think about? And what do you avoid thinking about?"
+    "body": "Think back on the last 12 months. Did you go to any 'burns'? What were the themes for you?"
   }, {
     "index": 2,
-    "body": "How about work, hobbies, family life, leisure, pleasure... Which activities from your present life would you like to keep doing? Which things would you like to never do again?"
+    "body": "What are you curious to learn from studying Burning Man and other burn events and their cultures?"
   }, {
     "index": 3,
-    "body": "Great, now that you've chosen what stays and what to leave behind - start to imagine your future self. The 'dream you'. How do you get there? Which new skills and what knowledge do you want to acquire?"
+    "body": "Imagine Burning Man in ten years. What does it look like?"
   }, {
     "index": 4,
-    "body": "Imagine your housing situation and the people around you (or their absence). Who are you surrounded by in your retirement?<br />Where and how would you like to live?"
-  }, {
-    "index": 5,
-    "body": "If you know people who have retired, was there something to learn from their experience and approach? Could you share their impressions?"
-  }, {
-    "index": 6,
-    "body": "How do you imagine sustaining yourself financially? Maybe you have a plan, a tip, or an idea, that you would like to share?"
-  }, {
-    "index": 7,
     "title": "The last little bit!",
     "nextTitle": "Submit your response!",
-    "body": "These questions will help make the research even more exact.",
+    "body": "These questions will be used to register an account for you on our forum. where you can go back and update your answers.",
     "fields": [{
       "name": "name",
       "type": "text",
@@ -64,11 +55,6 @@
       "required": true,
       "autofocus": true,
       "error": "Please enter your name"
-    }, {
-      "name": "age",
-      "type": "integer",
-      "placeholder": "Age (optional)",
-      "half": true
     }, {
       "name": "email",
       "type": "email",
@@ -79,7 +65,7 @@
     }, {
       "name": "consent",
       "type": "checkbox",
-      "placeholder": "I understand that this form is used for research. Researchers are encouraged to treat your answers as a window into societal, economic, technological, and political trends and transformations that affect us. As I participate in the discussion, I do not fear bad consequences when sharing with others my views and alignment on societal, economic, technological and political issues.",
+      "placeholder": "I understand that this form is used for research and that submitting it will create an account for me on the Burning Stories forum.",
       "required": true,
       "error": "Please consent to the terms and conditions",
       "settings": { "omit": true }
@@ -89,18 +75,8 @@
     "settings": { "omitBody": true }
   }, {
     "title": "Well done!",
-    "body": "Thank you for taking the time to fill out the questionnaire! Since this project is not just a research, you can experience one of the versions of retirement by visiting the Fužine retirement home, aka Academy of Life. The challenge team has worked there for the past months and prepared different ways for you to engage with the space and its inhabitants. You can find the instructions on the bio.si website, or you can grab the special BIO zine that explains it. See you at the Cafe at Home!<br /><br />* You will receive the confirmation of your participation on your email. You can opt out at any time, no spam guaranteed.",
+    "body": "Thank you for taking the time to join Burning Stories!",
     "fields": [],
-    "backText": null,
-    "nextText": "MAP"
-  }, {
-    "title": "Map!",
-    "diagram": {
-      "src": "/map.png",
-      "alt": "Map to the cafe"
-    },
-    "fields": [],
-    "settings": { "invert": true },
     "backText": null,
     "nextText": null
   }],
