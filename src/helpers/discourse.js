@@ -1,7 +1,7 @@
 import generatePassword from 'secure-random-string'
 import parameterize from 'parameterize'
 
-const createUser = (form, authKey, messages) => (
+const createUser = async (form, authKey, messages) => (
   fetch(`${process.env.VUE_APP_DISCOURSE_USER_URL}?${Object.entries({
     accepted_gtc: true,
     accepted_privacy_policy: true,
@@ -9,7 +9,7 @@ const createUser = (form, authKey, messages) => (
     requested_api_keys: [process.env.VUE_APP_DISCOURSE_DOMAIN],
     auth_key: authKey,
     email: formField(form, 'email'),
-    username: generateUsername(form),
+    username: await generateUsername(form),
     password: generatePassword({ length: 15 })
   }).map(pair => pair.map(encodeURIComponent).join('=')).join('&')}`)
     .then(handleResponse(messages), handleNetworkError(messages))
@@ -49,7 +49,14 @@ const formField = (form, field) => (
 )
 
 const generateUsername = form => (
-  `${parameterize(formField(form, 'name'), 20, '_')}_${Math.ceil(Math.random() * 100)}`
+  fetch(process.env.VUE_APP_DISCOURSE_DOMAIN + '/u/' + formField(form, 'name'), {
+  method: 'get',
+  headers: {'Content-Type': 'application/json' },
+  })).then(response => (
+  response.ok
+    ? `${parameterize(formField(form, 'name'), 20, '_')}_${Math.ceil(Math.random() * 100)}` 
+    : formField(form, 'name')
+  )
 )
 
 const generateResponse = form => (
