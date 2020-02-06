@@ -41,11 +41,11 @@ export default {
   .navigate {
     border: 0;
     padding: 0.75rem 3rem;
-    color: white;
+    color: black;
     border-radius: 2rem;
     font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
-    font-family: sans-serif;
+    font-weight: bold;
   }
 </style>

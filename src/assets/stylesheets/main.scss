@@ -1,18 +1,23 @@
-$primary: #234965;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+$primary: #73efef;
 $secondary: black;
 $tertiary: white;
 
-$complete: black;
+$complete: #73efef;
 $incomplete: #eeeeee;
 
 html, body {
   min-height: 100%;
   display: flex;
+  background-color: black;
 }
 
 * { box-sizing: border-box; }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   margin: 0;
 }
@@ -23,10 +28,14 @@ ul {
   padding: 0;
 }
 
+a {
+  color: $primary;
+}
+
 .primary-background { background-color: $primary; }
 .primary { color: $tertiary; }
 
-.secondary-background { background-color: $secondary; }
+.secondary-background { background-color: black; }
 .secondary { color: $tertiary; }
 
 .complete { background-color: $complete; }

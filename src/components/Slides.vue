@@ -7,6 +7,7 @@
         <Diagram v-bind="slide.diagram" />
         <Fields v-bind="slide" :response="response" :next="next" />
         <Error v-for="error in errors" :key="error" :error="error" />
+        <p class="body" v-html="slide.disclaimer" />
       </div>
       <Cancel :go="go" :title="slide.cancelTitle" :invert="slide.settings.invert" />
     </div>
@@ -84,6 +85,8 @@ export default {
 
 <style scoped lang="scss">
   .slides {
+    background-image: url(/wavebg.jpg);
+    background-size: cover;
     padding: 3rem;
     width: 100%;
     display: flex;
@@ -93,6 +96,7 @@ export default {
 
   .content {
     display: flex;
+    color: white;
   }
 
   .even {

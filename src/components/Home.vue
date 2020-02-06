@@ -1,12 +1,13 @@
 <template>
   <div class="home">
     <div class="top">
-      <Title v-bind="slide" />
+      <Title :instructions="brand.instructions" :image="brand.titleImgSrc" />
       <div class="locales">
-        <Locale v-for="l in locales" :key="l" :locale="l" :current="locale" :setLocale="setLocale" />
+        <img :src="brand.date" alt="Aalto University on 31st of March 2020" />
       </div>
+      <Navigation class="resp" :nextTitle="brand.beginTitle" :nextText="brand.beginText" :next="next" />
     </div>
-    <div class="bottom secondary-background">
+    <div class="bottom">
       <img class="logo" :src="brand.imageSrc" :alt="brand.title" />
       <Navigation :nextTitle="brand.beginTitle" :nextText="brand.beginText" :next="next" />
     </div>
@@ -36,6 +37,8 @@ export default {
 
 <style scoped lang="scss">
   .home {
+    background-image: url(/wavebg.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -43,6 +46,7 @@ export default {
   }
 
   .top {
+    color: white;
     padding: 3rem;
     flex-grow: 1;
   }
@@ -68,15 +72,24 @@ export default {
     max-width: 20rem;
   }
 
+  .resp {
+    visibility: hidden;
+  }
+
   @media (max-width: 768px) {
     .top {
       min-height: 100%;
     }
 
     .bottom {
+      visibility: hidden;
       min-height: 100%;
       flex-direction: column-reverse;
       align-items: flex-start;
+    }
+
+    .resp {
+      visibility: visible;
     }
 
     .navigation {
@@ -86,6 +99,7 @@ export default {
     }
 
     .locales {
+      visibility: hidden;
       top: auto;
       bottom: 1rem;
     }

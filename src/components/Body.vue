@@ -10,7 +10,9 @@ export default {
 
 <style scoped>
   .body {
-    font-size: 1.5rem;
+    max-width: 80%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
     margin: 0 0 4rem 0;
   }
 </style>
